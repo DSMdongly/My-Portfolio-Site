@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>토이그래머를 꿈꾸는 중</title>
+    </head>
+    
+    <!-- 나눔스퀘어 라운드 웹폰트 -->
+    <link rel="stylesheet" href="static/lib/nanumsquareround.min.css">
+    
+    <style>
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            font-family: 'NanumSquareRound', sans-serif;
+        }
+    </style>
+    
+    <style>
+        #side {
+            width: 30%;
+            height: 800px;
+            margin: 0px 16px 0px 0px;
+
+            color: #ffffff;
+            background-color: #2196f3;
+            
+            text-align: center;
+        }
+
+        #nav {
+            margin: 48px 0px 0px 0px;
+        }
+
+        #nav ul {
+            list-style: none;
+            padding: 0px 0px 0px 0px;
+        }
+
+        #nav ul li {
+            width: 100%;
+            padding: 16px 0px 16px 0px;
+
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+
+    <style>
+        #main {
+            width: 70%;
+            height: 800px;
+
+            overflow-y: scroll;
+        }
+    </style>
+
+    <style>
+        #title { 
+            margin: 0px 0px 16px 0px;
+            padding: 64px;
+
+            color: #ffffff;
+            background-color: #616161;
+
+            text-align: center;
+        }
+
+        #about {
+            margin: 0px 0px 16px 0px;
+            
+            color: #000000;
+            background-color: #ffffff; 
+        }
+    </style>
+
+    <style>
+        
+    </style>
+    
+    <body>
+        <!-- 사이드바 섹션 -->
+        <div id="side">
+                <div id="profile">
+                    <img id="profile-image" src="static/img/profile-image.png" alt="Profile Image" style="height: 200px; margin: 32px 0px 16px 0px; border-radius: 100px;">
+                    <h1 id="profile-name">김동현</h1>
+                    <h2 id="profile-department">소프트웨어 개발과</h2>
+                </div>
+                
+                <div id="nav">
+                    <ul>
+                        <li>About</li>
+                        <li>Skills</li>
+                        <li>Activities</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 메인 아티클 섹션 -->
+            <div id="main">
+                <div id="title">
+                    <img src="static/img/robot-icon.png" style="height: 160px;">
+                    <h1>안녕하세요</h1>
+                    <h2>프로그래밍으로 일상에 소소한 즐거움을 주는</h2>
+                    <h2>장난감 같은 서비스를 개발하고 싶은</h2>
+                    <h1>저는 '토이그래머'를 꿈꾸는 고등학생입니다.</h1>
+                </div>
+
+                <div id="about" style="color: #000000; background-color: #FFFFFF; margin-bottom: 16px; padding: 16px;">
+                    <h1>About Me</h1>
+                    <div style="padding: 16px">
+                        <p>안녕하세요, 저는 대덕소프트웨어마이스터고, 소프트웨어 개발과에 재학중인 김동현입니다.</p>
+                        <p>또한 프로그래밍으로 일상에 소소한 즐거움을 주는 장난감 같은 서비스를 만드는 개발자 '토이그래머'를 꿈꾸는 고등학생이기도 합니다.</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div id="about" style="color: #000000; background-color: #FFFFFF; margin-bottom: 16px; padding: 16px;">
+                    <h1>My Skills</h1>
+                    <div style="padding: 16px; display: flex">
+                        <div style="width: 100% ;text-align: center">
+                            <img src="static/img/golang-gopher.png" alt="golang" style="height: 180px;">
+                        </div>
+
+                        <div style="width: 100% ;text-align: center">
+                            <img src="static/img/python-logo.png" alt="python" style="height: 180px;">
+                        </div>
+
+                        <div style="width: 100% ;text-align: center">
+                            <img src="static/img/csharp-logo.png" alt="csharp" style="height: 180px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="about" style="color: #000000; background-color: #FFFFFF; margin-bottom: 16px; padding: 16px;">
+                    <h1>My Activities</h1>
+                    
+                    <div style="padding: 16px">
+                        <h2>멀티플레이어 보드 게임 'No Doubt'</h2>
+                        <h3>Game Server Developer &amp Engineer</h3>
+                        <h4>Java, JDBC, MySQL, AWS</h4>
+                        <div style="padding: 16px">
+                            <p>'No Doubt'은 기존의 주사위 보드게임에 스텝 &amp 푸시, 의심과 같이</p>
+                            <p>새로운 재미 요소를 추가한 멀티플레이어 보드게임입니다.</p>
+                            <p><br></p>
+                            <p>Java 기반의 OpenGL, TCP Socket API를 기반으로 제작된 자체 게임</p>
+                            <p>클라이언트 &amp 서버 엔진으로 제작된 데스크탑 전용 게임입니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="padding: 16px">
+                        <h2>대마고 기숙사 관리 시스템 'DMS for DSM'</h2>
+                        <h3>Windows Punishment Client Programmer &amp Guru</h3>
+                        <h4>C#, WPF, Advanced Installer</h4>
+                        <div style="padding: 16px">
+                            <p>'DMS for DSM'은 연장, 잔류 신청, </p>
+                            <p>새로운 재미 요소를 추가한 멀티플레이어 보드게임입니다.</p>
+                            <p><br></p>
+                            <p>Java 기반의 OpenGL, TCP Socket API를 기반으로 제작된 자체 게임</p>
+                            <p>클라이언트 &amp 서버 엔진으로 제작된 데스크탑 전용 게임입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
