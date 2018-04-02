@@ -3,95 +3,91 @@
     <head>
         <meta charset="utf-8">
         <title>토이그래머를 꿈꾸는 중</title>
-    </head>
+        <!-- 나눔고딕 웹폰트 -->
+        <link rel="stylesheet" href="static/lib/nanumgothic.css">
+        <!-- 나눔스퀘어 라운드 웹폰트 -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+        <style>
+            *, *:before, *:after {
+                box-sizing: border-box;
+            }
     
-    <!-- 나눔고딕 웹폰트 -->
-    <link rel="stylesheet" href="static/lib/nanumgothic.css">
+            body {
+                background-color: #f1f1f1;
+                display: flex;
+                font-family: 'NanumSquareRound', sans-serif;
+            }
+        </style>
     
-    <!-- 나눔스퀘어 라운드 웹폰트 -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
-
-    <style>
-        *, *:before, *:after {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #f1f1f1;
-            display: flex;
-            font-family: 'NanumSquareRound', sans-serif;
-        }
-    </style>
-
-    <style>
-        .card{
-            box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2),
-                        0 4px 20px 0 rgba(0,0,0,0.19);
-        }
-    </style>
-    
-    <style>
-        #side {
-            width: 30%;
-            height: 800px;
-            margin: 0px 16px 0px 0px;
-
-            color: #ffffff;
-            background-color: #2196f3;
-
-            text-align: center;
-        }
-
-        #nav {
-            margin: 48px 0px 0px 0px;
-        }
-
-        #nav ul {
-            list-style: none;
-            padding: 0px 0px 0px 0px;
-        }
-
-        #nav ul li {
-            width: 100%;
-            padding: 16px 0px 16px 0px;
-
-            text-align: center;
-            cursor: pointer;
-        }
-    </style>
-
-    <style>
-        #main {
-            width: 70%;
-            height: 800px;
-
-            overflow-y: scroll;
-        }
-    </style>
-
-    <style>
-        #title { 
-            margin: 0px 0px 16px 0px;
-            padding: 64px;
-
-            color: #ffffff;
-            background-color: #616161;
-
-            text-align: center;
-        }
-
-        #about {
-            margin: 0px 0px 16px 0px;
-            
-            color: #000000;
-            background-color: #ffffff; 
-        }
-    </style>
-
-    <style>
+        <style>
+            .card{
+                box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2),
+                            0 4px 20px 0 rgba(0,0,0,0.19);
+            }
+        </style>
         
-    </style>
+        <style>
+            #side {
+                width: 30%;
+                height: 800px;
+                margin: 0px 16px 0px 0px;
     
+                color: #ffffff;
+                background-color: #2196f3;
+    
+                text-align: center;
+            }
+    
+            #nav {
+                margin: 48px 0px 0px 0px;
+            }
+    
+            #nav ul {
+                list-style: none;
+                padding: 0px 0px 0px 0px;
+            }
+    
+            #nav ul li {
+                width: 100%;
+                padding: 16px 0px 16px 0px;
+    
+                text-align: center;
+                cursor: pointer;
+            }
+        </style>
+    
+        <style>
+            #main {
+                width: 70%;
+                height: 800px;
+    
+                overflow-y: scroll;
+            }
+        </style>
+    
+        <style>
+            #title { 
+                margin: 0px 0px 16px 0px;
+                padding: 64px;
+    
+                color: #ffffff;
+                background-color: #616161;
+    
+                text-align: center;
+            }
+    
+            #about {
+                margin: 0px 0px 16px 0px;
+                
+                color: #000000;
+                background-color: #ffffff; 
+            }
+        </style>
+    
+        <style>
+            
+        </style>
+    </head>
     <body>
         <!-- 사이드바 섹션 -->
         <div id="side" class="card">
@@ -173,6 +169,9 @@
                         <p><br></p>
                         <p>Java 기반의 OpenGL, TCP Socket API를 기반으로 제작된 자체 게임</p>
                         <p>클라이언트 &amp 서버 엔진으로 제작된 데스크탑 전용 게임입니다.</p>
+                        <p><br></p>
+                        <p>Java 기반의 TCP Socket API를 이용해 제작한 멀티플레이어 게임 서버를</p>
+                        <p>AWS EC2 인스턴스에 배포하고, MySQL을 이용해 사용자 데이터를 저장했습니다.</p>
                     </div>
                 </div>
                     
@@ -195,15 +194,43 @@
                 <div style="padding: 16px">
                     <h2>위치 기반 동창 추적 서비스 'Ward'</h2>
                     <h3>Backend Server Developer &amp Engineer</h3>
-                    <h4>Node.JS, Koa2, MongoDB, Heroku, MLab</h4>
+                    <h4>Node.JS, Koa2, MongoDB, Mongoose, Heroku, MLab</h4>
                     <div style="padding: 16px">
                         <p>'Ward'는 자신의 활동 구역을 알리는 와드, 그리고</p>
                         <p>출신 학교를 이용한 위치 기반 동창찾기 서비스로,</p>
                         <p>'하이톤:졸업'에서 출품한 작품입니다.</p>
                         <p><br></p>
-                        <p>Node.JS와 Koa2을 이용해 GUI 서버 애플리케이션을 제작하고</p>
+                        <p>Node.JS와 Koa2을 이용해 백엔드 서버 애플리케이션을 제작하고</p>
                         <p>Heroku에 서버를 배포한 뒤 MLab에서 제공하는 Mongo Server 에</p>
                         <p>사용자 데이터를 저장하고, 관리하였습니다.</p>
+                    </div>
+                </div>
+
+                <div style="padding: 16px">
+                    <h2>문학의 아름다움을 추구하는 글 쓰기 서비스 '시.'</h2>
+                    <h3>Backend Server Developer &amp Engineer</h3>
+                    <h4>Java, VertX.Web, JDBC, MySQL, AWS</h4>
+                    <div style="padding: 16px">
+                        <p>'시.'는 기존 글 쓰기 서비스와는 조금 다르게 세 편 이상의 글을</p>
+                        <p>책 형태로 타인과 공유하면서 사용자들에게 쓴 글에 대한 책임을 갖고</p>
+                        <p>동시에 문학의 아름다움을 추구하고자 하는 서비스입니다.</p>
+                        <p><br></p>
+                        <p>Java와 VertX를 이용해 백엔드 서버 애플리케이션을 제작하고</p>
+                        <p>AWS EC2 인스턴스에 서버를 배포한 뒤 MySQL 기반의 DB 서버에</p>
+                        <p>사용자 데이터를 저장하고 관리하였습니다.</p>
+                    </div>
+                </div>
+
+                <div style="padding: 16px">
+                    <h2>트위터 식사 시간 알림 봇 '식사봇'</h2>
+                    <h3>Bot Developer &amp Engineer</h3>
+                    <h4>Go, Echo, Go-Twitter, Heroku, PostgreSQL</h4>
+                    <div style="padding: 16px">
+                        <p>'식사봇'은 관리자가 지정한 특정 식사 시간마다 자동으로</p>
+                        <p>식사 알람 트윗을 제공하는 트위터 알람 봇입니다.</p>
+                        <p><br></p>
+                        <p>Go와 Echo를 이용해 알람 시간, 문구를 수정하는 서버를 제작한 후</p>
+                        <p>Heroku에 배포하고, PostgreSQL DB 서버에 알람 데이터를 저장했습니다.</p>
                     </div>
                 </div>
             </div>            
