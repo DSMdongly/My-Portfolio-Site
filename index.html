@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Just Toygrammer</title>
+        
+        <!-- library CSS -->
+        <!-- Nanum Square Round Web Font -->
+        <link rel="stylesheet" href="static/lib/nanumsquareround.css">
+        
+        <!-- user defination CSS -->
+        <link rel="stylesheet" href="static/css/index.css">
+    </head>
+    <body>
+        <!-- Side Bar -->
+        <div id="side" class="card">
+            <!-- Side Bar Profile Article -->
+            <div id="profile">
+                <img id="profile-image" src="static/img/profile-image.png" alt="Profile Image">
+                <h1 id="profile-name">김동현</h1>
+                <h2 id="profile-department">소프트웨어 개발과</h2>
+            </div>
+            
+            <!-- Side Bar Navigation -->
+            <div id="nav">
+                <ul>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Activities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Article -->
+        <div id="main">
+            <!-- Title JumboTron -->
+            <div id="title" class="card">
+                <img id="title-image" src="static/img/robot-icon.png" style="height: 160px;">
+                <h1>안녕하세요</h1>
+                <h2>프로그래밍으로 일상에 소소한 즐거움을 주는</h2>
+                <h2>장난감 같은 서비스를 개발하고 싶은</h2>
+                <h1>저는 '토이그래머'를 꿈꾸는 고등학생입니다.</h1>
+            </div>
+
+            <!-- About Me Article -->
+            <div id="about" class="card">
+                <h1>About Me</h1>
+                <div id="about-me">
+                    <p>안녕하세요, 저는 대덕소프트웨어마이스터고, 소프트웨어 개발과에 재학중인 김동현입니다.</p>
+                    <p>또한 프로그래밍으로 일상에 소소한 즐거움을 주는 장난감 같은 서비스를 만드는 개발자 '토이그래머'를 꿈꾸는 고등학생이기도 합니다.</p>
+                    <p></p>
+                </div>
+            </div>
+
+            <div id="skills" class="card">
+                <h1>My Skills</h1>
+                
+                <div class="row">
+                    <div class="col">
+                        <img class="skill-pic" src="static/img/golang-gopher.png" alt="golang">
+                    </div>
+
+                    <div class="col">
+                        <img class="skill-pic" src="static/img/python-logo.png" alt="python">
+                    </div>
+
+                    <div class="col">
+                        <img class="skill-pic" src="static/img/csharp-logo.png" alt="csharp">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img class="skill-pic" src="static/img/node-js-logo.png" alt="golang">
+                    </div>
+
+                    <div class="col">
+                        <img class="skill-pic" src="static/img/mongo-db-logo.png" alt="python">
+                    </div>
+
+                    <div class="col">
+                        <img class="skill-pic" src="static/img/heroku-logo.png" alt="csharp">
+                    </div>
+                </div>
+            </div>
+
+            <div id="acts" class="card">
+                <h1>My Activities</h1>
+                    
+                <div class="act">
+                    <h2>멀티플레이어 보드 게임 'No Doubt'</h2>
+                    <h3>Game Server Developer &amp Engineer</h3>
+                    <h4>Java, JDBC, MySQL, AWS</h4>
+                    <div class="act-desc">
+                        <p>'No Doubt'은 기존의 주사위 보드게임에 스텝 &amp 푸시, 의심과 같이</p>
+                        <p>새로운 재미 요소를 추가한 멀티플레이어 보드게임입니다.</p>
+                        <p><br></p>
+                        <p>Java 기반의 OpenGL, TCP Socket API를 기반으로 제작된 자체 게임</p>
+                        <p>클라이언트 &amp 서버 엔진으로 제작된 데스크탑 전용 게임입니다.</p>
+                        <p><br></p>
+                        <p>Java 기반의 TCP Socket API를 이용해 제작한 멀티플레이어 게임 서버를</p>
+                        <p>AWS EC2 인스턴스에 배포하고, MySQL을 이용해 사용자 데이터를 저장했습니다.</p>
+                    </div>
+                </div>
+                    
+                <div class="act">
+                    <h2>대마고 기숙사 관리 시스템 'DMS for DSM'</h2>
+                    <h3>Windows Punishment Client Programmer &amp Guru</h3>
+                    <h4>C#, WPF, Advanced Installer</h4>
+                    <div class="act-desc">
+                        <p>'DMS for DSM'은 연장학습, 주말 잔류 신청, 기숙사 상벌점 등을 </p>
+                        <p>관리하고, 자동화하는 시스템이며 다양한 플랫폼의 앱이 존재합니다.</p>
+                        <p><br></p>
+                        <P>저는 그 중 사감 선생님들이 기숙사 내 상벌점 관리를 돕는</p>
+                        <p>Windows GUI 애플리케이션을 제작하였습니다.</p>
+                        <p><br></p>
+                        <p>C#과 WPF을 이용해 GUI 애플리케이션을 제작하고 이후</p>
+                        <p>Advanced Installer 로 설치파일을 만들어 배포하였습니다.</p>
+                    </div>
+                </div>
+
+                <div class="act">
+                    <h2>위치 기반 동창 추적 서비스 'Ward'</h2>
+                    <h3>Backend Server Developer &amp Engineer</h3>
+                    <h4>Node.JS, Koa2, MongoDB, Mongoose, Heroku, MLab</h4>
+                    <div class="act-desc">
+                        <p>'Ward'는 자신의 활동 구역을 알리는 와드, 그리고</p>
+                        <p>출신 학교를 이용한 위치 기반 동창찾기 서비스입니다.</p>
+                        <p><br></p>
+                        <p>Node.JS와 Koa2을 이용해 백엔드 서버 애플리케이션을 제작하고</p>
+                        <p>Heroku에 서버를 배포한 뒤 MLab에서 제공하는 Mongo Server 에</p>
+                        <p>사용자 데이터를 저장하고, 관리하였습니다.</p>
+                    </div>
+                </div>
+
+                <div class="act">
+                    <h2>문학의 아름다움을 추구하는 글 쓰기 서비스 '시.'</h2>
+                    <h3>Backend Server Developer &amp Engineer</h3>
+                    <h4>Java, VertX.Web, JDBC, MySQL, AWS</h4>
+                    <div class="act-desc">
+                        <p>'시.'는 기존 글 쓰기 서비스와는 조금 다르게 세 편 이상의 글을</p>
+                        <p>책 형태로 타인과 공유하면서 사용자들에게 쓴 글에 대한 책임을 갖고</p>
+                        <p>동시에 문학의 아름다움을 추구하고자 하는 서비스입니다.</p>
+                        <p><br></p>
+                        <p>Java와 VertX를 이용해 백엔드 서버 애플리케이션을 제작하고</p>
+                        <p>AWS EC2 인스턴스에 서버를 배포한 뒤 MySQL 기반의 DB 서버에</p>
+                        <p>사용자 데이터를 저장하고 관리하였습니다.</p>
+                    </div>
+                </div>
+
+                <div class="act">
+                    <h2>트위터 식사 시간 알림 봇 '식사봇'</h2>
+                    <h3>Bot Developer &amp Engineer</h3>
+                    <h4>Go, Echo, Go-Twitter, Heroku, PostgreSQL</h4>
+                    <div class="act-desc">
+                        <p>'식사봇'은 관리자가 지정한 특정 식사 시간마다 자동으로</p>
+                        <p>정해둔 식사 알람 트윗을 제공하는 트위터 알람 봇입니다.</p>
+                        <p><br></p>
+                        <p>Go와 Echo를 이용해 알람 시간, 문구를 수정하는 서버를 제작한 후</p>
+                        <p>Heroku에 배포하고, PostgreSQL DB 서버에 알람 데이터를 저장했습니다.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </body>
+</html>
